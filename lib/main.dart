@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:key_info/models/home/view/homeView.dart';
 import 'package:key_info/models/test.dart';
+// @dart=2.9 --no-sound-null-safety
 
 void main() {
   runApp(const Main());

@@ -26,8 +26,8 @@ class Rektorat extends StatelessWidget {
                 },
                 child: Column(
                   children: [
-                    Image.network(
-                      "http://www.keu.kg/uploads/staff/cTmScPmZZaqPJXtzlDimE2X3TDg7_7Ry.jpeg",
+                    Image.asset(
+                      "assets/images/Кадыралиев.jpeg",
                       width: 600,
                       height: 350,
                     ),
@@ -46,8 +46,8 @@ class Rektorat extends StatelessWidget {
                 },
                 child: Column(
                   children: [
-                    Image.network(
-                      "http://www.keu.kg/uploads/staff/G0OaF5fjEqLDmq472f0dPU3FDSkrZqJJ.jpeg",
+                    Image.asset(
+                      "assets/images/Турсуналиева.jpeg",
                       width: 600,
                       height: 350,
                     ),
@@ -66,8 +66,8 @@ class Rektorat extends StatelessWidget {
                 },
                 child: Column(
                   children: [
-                    Image.network(
-                      "http://www.keu.kg/uploads/staff/N-gwmKrwt4PX3z5n0IsRKIZ9ETLID_Bo.jpeg",
+                    Image.asset(
+                      "assets/images/Супаева.jpeg",
                       width: 600,
                       height: 350,
                     ),
@@ -86,8 +86,8 @@ class Rektorat extends StatelessWidget {
                 },
                 child: Column(
                   children: [
-                    Image.network(
-                      "http://www.keu.kg/uploads/staff/pcMAo89XTgiJedlRnj9zfFTVJoQmgwUj.jpg",
+                    Image.asset(
+                      "assets/images/Нурматова.jpg",
                       width: 600,
                       height: 350,
                     ),
