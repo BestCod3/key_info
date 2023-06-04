@@ -4,17 +4,17 @@ import 'package:key_info/bottomBar/bottomBar.dart';
 import 'package:key_info/data/kafedra.dart';
 import 'package:key_info/models/kafedry/kafedrabutton.dart';
 import 'package:get/get.dart';
-import 'package:webview_flutter/webview_flutter.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
 
 class Kafedry extends StatelessWidget {
   Kafedry({Key? key}) : super(key: key);
-  final sizedBox = const SizedBox(
+  final sizedBox = SizedBox(
     height: 15,
   );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppbar(height: 90),
+      appBar: CustomAppbar(height: 90),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -37,7 +37,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=34"));
               },
               image: Image.asset("assets/images/kafedra2.jpg"),
@@ -48,7 +48,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=35"));
               },
               image: Image.asset(
@@ -60,7 +60,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=36"));
               },
               image: Image.asset(
@@ -73,7 +73,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=37"));
               },
               image: Image.asset(
@@ -85,7 +85,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=38"));
               },
               image: Image.asset(
@@ -98,7 +98,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=39"));
               },
               image: Image.asset(
@@ -110,7 +110,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=40"));
               },
               image: Image.asset(
@@ -123,7 +123,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=41"));
               },
               image: Image.asset(
@@ -135,7 +135,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=43"));
               },
               image: Image.asset(
@@ -148,7 +148,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=42"));
               },
               image: Image.asset(
@@ -160,7 +160,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=53"));
               },
               image: Image.asset(
@@ -173,7 +173,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=134"));
               },
               image: Image.asset(
@@ -185,7 +185,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=161"));
               },
               image: Image.asset(
@@ -197,7 +197,7 @@ class Kafedry extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=174"));
               },
               image: Image.asset(
@@ -209,7 +209,7 @@ class Kafedry extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }

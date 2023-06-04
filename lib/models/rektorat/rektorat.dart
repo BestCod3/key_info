@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:key_info/appbar/customAppbar.dart';
+import 'package:key_info/bottomBar/bottomBar.dart';
 import 'package:key_info/data/rector1.dart';
 import 'package:key_info/data/rector2.dart';
 import 'package:key_info/data/rector3.dart';
 import 'package:key_info/data/rector4.dart';
+import 'package:key_info/data/search/searchPage.dart';
 
 import '../../data/kafedra.dart';
 
@@ -103,6 +105,7 @@ class Rektorat extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }

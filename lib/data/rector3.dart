@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:key_info/appbar/customAppbar.dart';
+import 'package:key_info/bottomBar/bottomBar.dart';
 
 class Rector3 extends StatelessWidget {
-  const Rector3({Key? key}) : super(key: key);
+  const Rector3({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -241,6 +244,7 @@ class Rector3 extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }

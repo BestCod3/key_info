@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:key_info/data/search/searchPage.dart';
 import 'package:key_info/models/home/view/homeView.dart';
 
 class BottomBar extends StatelessWidget {
@@ -30,7 +31,9 @@ class BottomBar extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(SearchPage());
+              },
               icon: Icon(
                 Icons.search,
                 size: 40,

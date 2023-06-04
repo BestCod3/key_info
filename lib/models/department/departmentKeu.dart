@@ -7,12 +7,12 @@ import '../../data/kafedra.dart';
 import '../kafedry/kafedrabutton.dart';
 
 class DepartmentKeu extends StatelessWidget {
-  const DepartmentKeu({Key? key}) : super(key: key);
-  final sizedBox = const SizedBox(height: 15);
+  DepartmentKeu({Key? key}) : super(key: key);
+  final sizedBox = SizedBox(height: 15);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppbar(height: 90),
+      appBar: CustomAppbar(height: 90),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -23,7 +23,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                   initialUrl: "http://www.keu.kg/site/menu-detail?mid=50",
                 ));
               },
@@ -36,7 +36,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=51"));
               },
               image: Image.asset("assets/images/faculty_block_kafedra.png"),
@@ -46,7 +46,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=162"));
               },
               image: Image.asset(
@@ -58,7 +58,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=52"));
               },
               image: Image.asset(
@@ -70,7 +70,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=54"));
               },
               image: Image.asset(
@@ -82,7 +82,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=55"));
               },
               image: Image.asset(
@@ -94,7 +94,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=62"));
               },
               image: Image.asset(
@@ -106,7 +106,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=56"));
               },
               image: Image.asset(
@@ -118,7 +118,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=57"));
               },
               image: Image.asset(
@@ -130,7 +130,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=58"));
               },
               image: Image.asset(
@@ -142,7 +142,7 @@ class DepartmentKeu extends StatelessWidget {
             sizedBox,
             ButtonKafedra(
               onTap: () {
-                Get.to(const Kafedra(
+                Get.to(Kafedra(
                     initialUrl: "http://www.keu.kg/site/menu-detail?mid=135"));
               },
               image: Image.asset(
@@ -154,7 +154,7 @@ class DepartmentKeu extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: const BottomBar(),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }

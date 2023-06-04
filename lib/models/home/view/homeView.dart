@@ -15,40 +15,38 @@ class HomeView extends StatelessWidget {
     final sizedBox = SizedBox(
       height: 40,
     );
-    return SafeArea(
-      child: Scaffold(
-        extendBodyBehindAppBar: true,
-        appBar: CustomAppbar(
-          height: 150,
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              sizedBox,
-              Inkwell(
-                  onTap: () {
-                    Get.to(Kafedry());
-                  },
-                  text: "Кафедры"),
-              sizedBox,
-              Inkwell(
-                  onTap: () {
-                    Get.to(DepartmentKeu());
-                  },
-                  text: "Отделы"),
-              sizedBox,
-              Inkwell(
-                  onTap: () {
-                    Get.to(Rektorat());
-                  },
-                  text: "Ректорат"),
-              sizedBox
-            ],
-          ),
-        ),
-        bottomNavigationBar: BottomBar(),
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: CustomAppbar(
+        height: 150,
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            sizedBox,
+            Inkwell(
+                onTap: () {
+                  Get.to(Kafedry());
+                },
+                text: "Кафедры"),
+            sizedBox,
+            Inkwell(
+                onTap: () {
+                  Get.to(DepartmentKeu());
+                },
+                text: "Отделы"),
+            sizedBox,
+            Inkwell(
+                onTap: () {
+                  Get.to(Rektorat());
+                },
+                text: "Ректорат"),
+            sizedBox
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomBar(),
     );
   }
 }
